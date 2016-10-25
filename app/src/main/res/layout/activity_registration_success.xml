@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_congratulations_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00BFA5"
+    tools:context="com.sparkles.dietanalytics.RegistrationSuccessActivity">
+
+    <TextView
+        android:text="Congratulations for a Successful Registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/successMessage"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:textSize="24dp"
+        android:textAllCaps="false"
+        android:textStyle="normal|bold|italic"
+        android:gravity="center_vertical|center_horizontal" />
+
+
+    <Button
+        android:text="Continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/congrats_continue"
+        android:background="#00BFA5"
+        android:onClick="onCLickContinue"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+        android:textStyle="normal|bold|italic"
+        android:layout_gravity="center"
+        android:layout_marginTop="195dp"
+        android:gravity="center_horizontal" />
+
+
+</LinearLayout>

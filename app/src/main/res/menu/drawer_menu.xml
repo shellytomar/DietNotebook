@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/home"></item>
+
+        <item
+            android:id="@+id/action_steps"
+            android:title="Steps"
+            android:icon="@drawable/black_steps"/>
+
+        <item
+            android:id="@+id/action_addFood"
+            android:title="Add Food"
+            android:icon="@drawable/black_food"></item>
+        <item
+            android:id="@+id/action_articles"
+            android:title="Article"
+            android:icon="@drawable/black_articles"/>
+        <item
+            android:id="@+id/action_reports"
+            android:title="Report"
+            android:icon="@drawable/black_report"/>
+        <item
+            android:id="@+id/action_logout"
+            android:title="Logout"
+            android:icon="@drawable/signout" />
+        <item
+            android:id="@+id/exit"
+            android:title="Exit"
+            android:icon="@drawable/exiticon"></item>
+
+    </group>
+
+</menu>

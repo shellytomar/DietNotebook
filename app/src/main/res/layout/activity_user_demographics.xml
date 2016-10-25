@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_height_weight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="com.sparkles.dietanalytics.UserDemographicsActivity">
+
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="210dp"
+        android:layout_height="35dp"
+        android:background="#ffffff"
+        android:maxLength="70"
+        android:textSize="14dp"
+        android:hint="In cms"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="106dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignEnd="@+id/textView1" />
+    <TextView
+        android:text="How much do you weigh? "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:id="@+id/textView1"
+        android:textSize="20dp"
+        android:layout_below="@+id/height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="210dp"
+        android:layout_height="35dp"
+        android:background="#ffffff"
+        android:maxLength="70"
+        android:textSize="14dp"
+        android:hint="In kgs"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignEnd="@+id/textView1"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:text="What is your goal weight?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:id="@+id/textView2"
+        android:textSize="20dp"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/weight"
+        android:layout_alignRight="@+id/weight"
+        android:layout_alignEnd="@+id/weight" />
+
+    <EditText
+        android:id="@+id/goalweight"
+        android:layout_width="210dp"
+        android:layout_height="35dp"
+        android:background="#ffffff"
+        android:maxLength="70"
+        android:textSize="14dp"
+        android:hint="In Kgs"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <Button
+        android:text="Continue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+        android:layout_marginTop="52dp"
+        android:id="@+id/height_weight_continue"
+        android:background="@drawable/dark_green_button"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/goalweight"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:textSize="18dp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="How tall are you?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:layout_marginBottom="48dp"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

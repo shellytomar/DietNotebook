@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="What is your goal?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:textColor="#000000"
+        android:id="@+id/textView"
+        android:textSize="22sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="Lose Weight"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:background="@drawable/dark_green_button"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+        android:textColor="#FFFFFF"
+        android:onClick="onClickActive"
+        android:id="@+id/loseWeight"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="Maintain Weight"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:id="@+id/maintainWeight"
+        android:layout_below="@+id/loseWeight"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+        android:background="@drawable/dark_green_button"
+        android:textColor="#FFFFFF"
+        android:onClick="onClickActive"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="Gain Weight"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:id="@+id/gainWeight"
+        android:background="@drawable/dark_green_button"
+        android:textColor="#FFFFFF"
+        android:onClick="onClickActive"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+        android:layout_below="@+id/maintainWeight"
+        android:layout_alignRight="@+id/loseWeight"
+        android:layout_alignEnd="@+id/loseWeight"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+</RelativeLayout>

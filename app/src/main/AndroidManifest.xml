@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sparkles.dietanalytics">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserDetailsActivity"
+            android:label="@string/title_activity_user_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HealthGoalActivity"
+            android:label="@string/title_activity_health_goal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ActiveTypeActivity"
+            android:label="@string/title_activity_active_type"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddItemActivity"
+            android:label="@string/title_activity_add_item"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SignInActivity"
+            android:label="@string/title_activity_sign_in"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dashboard"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserDemographicsActivity"
+            android:label="@string/title_activity_user_demographics"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegistrationSuccessActivity"
+            android:label="@string/title_activity_registration_success"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".StepCountActivity"
+            android:label="@string/title_activity_step_count"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ReportActivity"
+            android:label="@string/title_activity_report"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProgressActivity"
+            android:label="@string/title_activity_progress"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".FoodDetailsActivity"
+            android:label="Food Details"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ArticlesActivity"
+            android:label="Articles"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".CustomListActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_basic_details"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EEEEEE"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.sparkles.dietanalytics.UserDetailsActivity">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Name"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:inputType="textCapWords"
+            android:textColor="#000000"
+            android:textColorHint="@color/input_register_hint"  />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="@color/input_register_hint" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="@color/input_register_hint" />
+
+
+        <EditText
+            android:id="@+id/confirmpassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="@color/input_register_hint" />
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="259dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearlayout2"
+                android:layout_below="@+id/confirmpassword">
+
+
+                <RadioButton
+                    android:text="Male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/male"
+                    android:onClick="onRadioButtonClicked"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:text="Female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:id="@+id/female"
+                    android:onClick="onRadioButtonClicked"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearlayout3"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/linearlayout2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dobText"
+                android:textColor="#060606"
+                android:text="Date of Birth"
+                android:textSize="18sp" />
+
+            <Button
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/dob"
+                android:background="@drawable/calendar"
+                android:onClick="onClickDOB"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:id ="@+id/txtViewDateofBirth"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_continue_details"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/dark_green_button"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:onClick="onClickContinue"
+            android:textSize="18dp"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+</LinearLayout>

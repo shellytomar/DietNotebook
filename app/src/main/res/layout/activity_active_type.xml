@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="How Active are you?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:textColor="#000000"
+        android:id="@+id/textView"
+        android:textSize="22sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="Sedentary \n Spend most of the day sitting"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="51dp"
+        android:background="@drawable/dark_green_button"
+        android:textColor="#FFFFFF"
+        android:onClick="onClickActiveButton"
+        android:id="@+id/sedentary"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="Moderate \n Spend a good part of the day on their feet"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="34dp"
+        android:id="@+id/moderate"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/sedentary"
+        android:background="@drawable/dark_green_button"
+        android:textColor="#FFFFFF"
+        android:onClick="onClickActiveButton"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="Active \n Spend the good part of the day doing some physical activity"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="39dp"
+        android:id="@+id/active"
+        android:background="@drawable/dark_green_button"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/moderate"
+        android:layout_alignRight="@+id/sedentary"
+        android:onClick="onClickActiveButton"
+        android:layout_alignEnd="@+id/sedentary"
+        android:textStyle="normal|bold" />
+
+
+</RelativeLayout>

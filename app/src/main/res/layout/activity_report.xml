@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.sparkles.dietanalytics.ReportActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/linegraph"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/white"
+            android:weightSum="1">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/linechart"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayoutTest1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_view_week"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Weekly Steps"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+                android:background="@drawable/dark_green_button"
+                android:textSize="18dp"
+                android:textStyle="normal|bold" />
+
+            <Button
+                android:id="@+id/btn_view_today"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Today's Steps"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+                android:background="@drawable/dark_green_button"
+                android:layout_marginLeft="30dp"
+                android:textSize="18dp"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reportList"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#F5F5F5">
+        </TextView>
+
+    </LinearLayout>
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:itemIconTint="@android:color/black"
+        app:menu="@menu/drawer_menu">
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

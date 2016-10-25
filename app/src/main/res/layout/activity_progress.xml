@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:itemIconTint="@android:color/black"
+        app:menu="@menu/drawer_menu">
+
+    </android.support.design.widget.NavigationView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="70dp"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout">
+
+            <com.sparkles.dietanalytics.CurvedTextView
+                android:id="@+id/compliance_curved_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:paddingTop="10dp" />
+
+
+        </LinearLayout>
+
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/circle_progress_background"
+            android:id="@+id/progressBar"
+            android:layout_alignTop="@+id/calories_burnt_circle_progress_bar"
+            android:layout_alignParentStart="true" />
+
+        <ProgressBar
+            android:id="@+id/calories_burnt_circle_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:max="100"
+            android:rotation="-90"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/circle_progress_foreground"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp" />
+
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/circle_progress_background"
+            android:layout_alignTop="@+id/circle_progress_bar"
+            android:layout_alignStart="@+id/circle_progress_bar"
+            android:id="@+id/progressBar2" />
+
+        <ProgressBar
+            android:id="@+id/circle_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:max="100"
+            android:rotation="-90"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/circle_progress_foreground"
+            android:layout_alignTop="@+id/progressBar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="35dp" />
+
+
+        <ImageView
+            android:id="@+id/activity_cardinal_bird"
+            android:layout_width="124dp"
+            android:layout_height="120dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/footsteps"
+            android:paddingTop="20dp"
+            android:layout_weight="0.10"
+            android:layout_alignBottom="@+id/progressBar2"
+            android:layout_alignEnd="@+id/progressBar2"
+            android:layout_alignTop="@+id/progressBar2"
+            android:layout_alignStart="@+id/progressBar2" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/burnt"
+            android:layout_marginBottom="38dp"
+            android:layout_alignBottom="@+id/progressBar"
+            android:layout_alignParentStart="true" />
+        >
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>
